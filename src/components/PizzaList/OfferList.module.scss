@@ -1,0 +1,103 @@
+.container{
+    background-color:rgb(255, 255, 255);
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    border-radius:2rem;
+    align-items: center;
+    overflow:hidden;
+    
+    .left{
+        overflow: hidden;
+        flex:1;
+        width:100%;
+        .imgCont{
+            border-radius:2rem 0 0 2rem;
+            .img{
+                width:100%;
+                object-fit:cover;
+                object-position:center;
+                transform:scale(1.03);
+                
+            }
+        }
+    }
+    .right{
+        overflow: hidden;
+        flex:1;
+        color:rgb(0, 0, 0);
+        width:100%;
+        padding:1rem;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        height: 100%;
+
+        .title{
+            h1{
+                font-weight:900;
+                font-size:2rem;
+                padding-bottom:1rem;
+            }
+        }
+        .subTitle{
+            h3{
+                font-size:1.4rem;
+                color:rgb(111, 111, 111);
+                padding-bottom:1rem;
+            }
+        }
+        .includes{
+            .includesList{
+                display:grid;
+                grid-template-columns:repeat(auto-fit, minmax(10rem, 1fr));
+                list-style-type:none;
+                gap:.5rem;
+                padding-bottom:.5rem;
+                li{
+                    font-size:1.3rem;
+                    color:rgb(146, 146, 146);
+                }
+            }
+        }
+        .bottomGroup{
+            display:flex;
+            width:100%;
+            align-items:center;
+            .price{
+                flex:1;
+                h1{
+                    font-weight: 900;
+                    color:rgb(237, 6, 6);
+                    font-family: 'Inspiration', cursive;
+                    font-size:3rem;
+                    white-space: nowrap;
+                }
+            }
+
+            .orderButton{
+                flex:1;
+                    display:flex;
+                    width:100%;
+                    justify-content:flex-end;
+                    margin-top:3rem;
+                     button{
+                         padding:1rem 4rem;
+                         border:.3px dashed rgb(109, 109, 109);
+                         background:none;
+                         border-radius:4rem;
+                         color:rgb(37, 37, 37);
+                         font-weight:800;
+                         transition:all .6s ease;
+                         cursor:pointer;
+         
+                         &:hover{
+                             background-color:red;
+                             border:.3px solid transparent;
+                             color:white;
+                         }
+                     }
+            }
+        }
+    }
+}

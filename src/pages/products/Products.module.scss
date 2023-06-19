@@ -1,0 +1,295 @@
+.products{
+    width:110rem;
+    margin:6rem auto;
+    min-height:70vh;
+    position:relative;
+
+    .container{
+        width:100%;
+        display:flex;
+        align-items:center;
+        .productsLeft{
+        flex:1;
+        display:flex;
+        justify-content:center;
+        .img{
+            width:100%;
+            object-fit:cover;
+            overflow:hidden;
+            width: 32rem;
+            height:32rem;
+            border-radius:50%;
+        }
+    }
+    .productsRight{
+        flex:1;
+        .title{
+            font-size:3.5rem;
+            color:white;
+            font-weight:900;
+            padding-bottom:2rem;
+
+            &::after{
+                content:"";
+                width:30rem;
+                height:30rem;
+                position:absolute;
+                display:inline-block;
+                background: linear-gradient(#e65c00, #F9D423);
+                top:20%;
+                left:20%;
+                filter:blur(170px) opacity(.4);
+                z-index:-1;
+            }
+        }
+
+            h4{
+                color:white;
+                font-size:1.6rem;
+                font-weight:700;
+                padding-bottom:1rem;
+                border-bottom:.3px solid grey;
+            }
+        
+        .description{
+            &Title{
+               h4{}
+            }
+            .text{
+                p{
+                    font-size:1.4rem;
+                    color:grey;
+                    padding:1rem 0;
+                }
+            }
+        }
+
+        .includes{
+            &Title{
+                h4{}
+            }
+            .list{
+                .includesList{
+                    ul{
+                        list-style-type:none;
+                        padding-top:1rem;
+                        li{
+                            font-size:1.4rem;
+                            color:grey;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pizzaSize{
+
+            &Title{
+                h4{
+                    padding-top:1rem;
+                }
+            }
+            .form{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                width:100%;
+                height:19rem;
+                padding:2rem 0;
+                
+                
+                .small{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:space-between;
+                    height:100%;
+                    &PizzaContainer{
+                        position:relative;
+                        display:flex;
+                        flex:1;
+                        align-items:center;
+                        i{
+                            font-size:5rem;
+                            color:white;
+                        }
+                        .price{
+                            font-size:2.5rem;
+                            font-family: 'Inspiration', cursive;
+                            color:red;
+                            position:absolute;
+                            top:2.3rem;
+                            left:3rem;
+                            font-weight:bold;
+                            text-shadow:1px 1px 10px black;
+                        }
+                        .size{
+                            border-radius:1rem;
+                            background-color:green;
+                            color:white;
+                            font-size:1.2rem;
+                            padding:.1rem 1rem;
+                            position:absolute;
+                            left:3rem;
+                            bottom:3.5rem;
+                        }
+                    }
+                    .formGroup{
+                        input{
+                            padding:.5rem 1rem;
+                            width:30%;
+                            border-radius:10rem;
+                            border:none;
+                        }
+                    }
+                }
+                .medium{
+                    
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:space-between;
+                    height:100%;
+                    &PizzaContainer{
+                        position:relative;
+                        display:flex;
+                        flex:1;
+                        align-items:center;
+
+                        i{
+                            font-size:7rem;
+                            color:white;
+                        }
+                        .price{
+                            font-size:2.5rem;
+                            font-family: 'Inspiration', cursive;
+                            color:red;
+                            position:absolute;
+                            top: 1rem;
+                            left:4rem;
+                            font-weight:bold;
+                            text-shadow:1px 1px 10px black;
+                        }
+                        .size{
+                            border-radius:1rem;
+                            background-color:green;
+                            color:white;
+                            font-size:1.2rem;
+                            padding:.1rem 1rem;
+                            position:absolute;
+                            left:5rem;
+                            bottom:3.5rem;
+                        }
+                    }
+                    .formGroup{
+                        input{
+                            padding:.5rem 1rem;
+                            width:30%;
+                            border-radius:10rem;
+                            border:none;
+                        }
+                    }
+                }
+                .large{
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:space-between;
+                    height:100%;
+                    &PizzaContainer{
+                        position:relative;
+                        display:flex;
+                        flex:1;
+                        align-items:center;
+                        i{
+                            font-size:10rem;
+                            color:white;
+                        }
+                        .price{
+                            font-size:2.5rem;
+                            font-family: 'Inspiration', cursive;
+                            color:red;
+                            position:absolute;
+                            top: -.5rem;
+                            left:7rem;
+                            font-weight:bold;
+                            text-shadow:1px 1px 10px black;
+                        }
+                        .size{
+                            border-radius:1rem;
+                            background-color:green;
+                            color:white;
+                            font-size:1.2rem;
+                            padding:.1rem 1rem;
+                            position:absolute;
+                            left:8rem;
+                            bottom:3.5rem;
+                        }
+                    }
+                    .formGroup{
+                        input{
+                            padding:.5rem 1rem;
+                            width:30%;
+                            border-radius:10rem;
+                            border:none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .extras{
+            .container{
+                display:flex;
+                justify-content:space-between;
+                padding:1rem 0;
+                .formGroup{
+                    display:flex;
+                    align-items:center;
+                    gap:1rem;
+                    label{
+                        font-size:1.4rem;
+                        color:grey;
+                    }
+                    input{}
+                }
+
+            }
+         
+        }
+
+        .submitButton{
+            flex:1;
+            display:flex;
+            width:100%;
+            justify-content:space-between;
+            align-items:center;
+            margin-top:3rem;
+
+            .totalText{
+                color:white;
+
+                span{
+                    font-size:3.5rem;
+                    color:red;
+                    font-family: 'Inspiration', cursive;
+                    font-weight:900
+                }
+            }
+             button{
+                 padding:1rem 4rem;
+                 border:.3px dashed rgb(109, 109, 109);
+                 background:none;
+                 border-radius:4rem;
+                 color:white;
+                 font-weight:800;
+                 transition:all .6s ease;
+                 cursor:pointer;
+ 
+                 &:hover{
+                     background-color:red;
+                     border:.3px solid transparent;
+                     color:white;
+                 }
+             }
+        }
+    }
+}
+}
